@@ -187,8 +187,9 @@
                 <div class="div7_1">
                     <p>Enter your e-mail below and get notified on the latest blog posts.</p>
                     <input type="email" placeholder="Enter e-mail">
-                    <a href="#">Subscribe</a>
+                    <a onclick="getmodal()" href="#">Subscribe</a>
                 </div>
+                
             </div>
         </aside>
 
@@ -201,5 +202,32 @@
             <a class="a" href="#nav_bar"><i class="fa-solid fa-arrow-up"></i> To the top</a>
             <p>Powered by <a href="#"> w3.css</a></p>
     </footer>
+    <div class="modal_parent" id="submodal">
+        <div class="modal">
+            <h3 class="modal_h">Subscribe</h3>
+            <a class="xmark" onclick="closemodal()" href=""><i class="fa-solid fa-xmark"></i></a>
+            <!-- <div class="clear"> </div> -->
+            <div class="div7_1 modal_content">
+                <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+                <input class="modal_input" type="email" placeholder="Enter e-mail">
+                <a href="#">Subscribe</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+    function getmodal() 
+        {
+            document.getElementById("submodal").style.display="block"; 
+        }
+
+        // function closemodal()
+        // {
+        //     document.getElementsByClassName("xmark").style.visibility="hidden";
+        // }
+    </script>
 </body>
 </html>

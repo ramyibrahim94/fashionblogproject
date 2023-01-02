@@ -384,3 +384,46 @@ footer p {
 footer p a {
     color: white;
 }
+.modal_parent {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    /* overflow: auto; */
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+    padding-top: 130px;
+}
+.modal {
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+}
+.xmark {
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    padding: 8px;
+}
+.xmark:hover {
+    background-color: #6161616c;
+}
+.modal_h {
+    display: inline-block;
+    font-family: "oswald";
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 30px;
+}
+.modal_content {
+    font-size: 16px;
+    padding-top: 8px;
+}
+.modal_input {
+    margin: 15px 0px;
+}
