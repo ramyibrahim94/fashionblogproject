@@ -205,7 +205,7 @@
     <div class="modal_parent" id="submodal">
         <div class="modal">
             <h3 class="modal_h">Subscribe</h3>
-            <a class="xmark" onclick="closemodal()" href=""><i class="fa-solid fa-xmark"></i></a>
+            <button class="xmark" onclick="closemodal()" ><i class="fa-solid fa-xmark"></i></button>
             <!-- <div class="clear"> </div> -->
             <div class="div7_1 modal_content">
                 <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
@@ -221,13 +221,13 @@
 
     function getmodal() 
         {
-            document.getElementById("submodal").style.display="block"; 
+            document.getElementById("submodal").style.visibility="visible"; 
         }
 
-        // function closemodal()
-        // {
-        //     document.getElementsByClassName("xmark").style.visibility="hidden";
-        // }
+        function closemodal()
+        {
+            document.getElementById("submodal").style.visibility="hidden";
+        }
     </script>
 </body>
 </html>
